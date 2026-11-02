@@ -12,7 +12,6 @@ final class ContentIntegrityLivewireServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'module-cms-content-integrity');
         Livewire::component('module-cms-content-integrity::integrity-report', IntegrityReport::class);
     }
 }
